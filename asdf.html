@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>고정 버튼 알림</title>
+  <style>
+    body {
+      height: 2000px; /* 스크롤 테스트 */
+      padding: 40px;
+    }
+
+    /* 고정 버튼 */
+    .notif-btn {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      padding: 10px 14px;
+      border-radius: 50%;
+      border: none;
+      background: #0078ff;
+      color: white;
+      cursor: pointer;
+      z-index: 10000;
+      font-size: 18px;
+    }
+
+    /* 알림 */
+    .notification {
+      position: fixed;
+      top: 70px;        /* 버튼 아래 */
+      right: 20px;
+      background: #333;
+      color: white;
+      padding: 14px 18px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+      z-index: 9999;
+
+      display: none;
+    }
+
+    .notification button {
+      margin-left: 10px;
+      background: none;
+      border: none;
+      color: white;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 고정 버튼 -->
+  <button class="notif-btn" onclick="toggleNotif()">🔔</button>
+
+  <!-- 알림 -->
+  <div class="notification" id="notif">
+    새 알림이 도착했습니다!
+    <button onclick="toggleNotif()">✖</button>
+  </div>
+
+  <script>
+    function toggleNotif() {
+      const notif = document.getElementById('notif');
+      notif.style.display =
+        notif.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>

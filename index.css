@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'sb';
+    src: url("SBL.ttf");
+}
+@font-face {
+    font-family: 'SeoulNotice';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2505-1@1.0/SeoulAlrimTTF-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-display: swap;
+}
+
+body {
+    background-color: #1B211A;
+}
+
+.info {
+    font-family: 'SeoulNotice';
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    color: #000000;
+    top:30px;
+    right: 30px;
+    font-size: 70px;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 10000;
+    border:5px solid;
+    border-color: #7b7b7b;
+}
+
+.texto {
+    margin-top: 300px;
+    text-align: center;
+    font-family: "sb";
+    font-size: 200px;
+    color: #ffffff;
+}
+.wrap {
+    margin-top: 300px;
+    text-align: center;
+}
+.menu {
+    border-radius: 10px;
+    color:#ecddc0;
+    font-size: 100px;
+    font-family: "sb";
+    margin-top: 30px;
+    width: 800px;
+    height: 500px;
+    background-image: url("images/lightgreen.png");
+
+}
+.menu:active, .info:active{
+    opacity: 0.8;
+}
+
+.rank {
+    font-family: 'sb';
+    font-size: 100px;
+    color: #000000;
+    width: 800px;
+    height: 150px;
+    border: 2px solid black;
+    margin-top: 30px;
+    line-height: 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+}
+
+.rank--1 {
+    background-color: #ffdc73;
+}
+
+.rank--2 {
+    background-color: #bbc6c9;
+}
+
+.rank--3 {
+    background-color: #bf8790;
+}
+
+
+
+
+
+
+
